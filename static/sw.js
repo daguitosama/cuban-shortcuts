@@ -1,4 +1,4 @@
-const version = 2;
+const version = 3;
 const cacheName = `shortcuts-${version}`;
 var isOnline = true;
 var urlsToCatch = [

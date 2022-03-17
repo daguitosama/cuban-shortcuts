@@ -1,13 +1,10 @@
 export default {
   // Target: https://go.nuxtjs.dev/config-target
   target: 'static',
-  generate: {
-    dir: 'docs'
-  },
 
-  router: {
-    base: '/cuban-shortcuts/'
-  },
+  // router: {
+  //   base: '/'
+  // },
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -22,9 +19,9 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/cuban-shortcuts/favicon.ico' },
-      { rel: 'manifest', href: '/cuban-shortcuts/manifest.json' },
-      { rel: 'apple-touch-icon', href: '/cuban-shortcuts/touch-icon-iphone.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'manifest', href: '/manifest.json' },
+      { rel: 'apple-touch-icon', href: '/touch-icon-iphone.png' },
       // <link rel="manifest" href="manifest.json">
       // <link rel="apple-touch-icon" href="touch-icon-iphone.png">
 
