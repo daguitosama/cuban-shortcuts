@@ -24,7 +24,9 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/cuban-shortcuts/favicon.ico' },
       { rel: 'manifest', href: '/cuban-shortcuts/manifest.json' },
+      { rel: 'apple-touch-icon', href: '/cuban-shortcuts/touch-icon-iphone.png' },
       // <link rel="manifest" href="manifest.json">
+      // <link rel="apple-touch-icon" href="touch-icon-iphone.png">
 
     ],
 
