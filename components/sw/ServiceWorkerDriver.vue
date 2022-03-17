@@ -34,9 +34,9 @@ export default {
       }
 
       async function initServiceWorker() {
-        swRegistration = await navigator.serviceWorker.register("/cuban-shortcuts/sw.js", {
+        swRegistration = await navigator.serviceWorker.register("/sw.js", {
           updateViaCache: "none",
-          scope: "/cuban-shortcuts/",
+          scope: "/",
         });
 
         svcworker =
