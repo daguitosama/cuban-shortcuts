@@ -1,0 +1,27 @@
+{
+  "name": "atajos",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/composition-api": "^0.31.0",
+    "@vue/runtime-dom": "^3.2.30",
+    "core-js": "^3.15.1",
+    "nuxt": "^2.15.7"
+  },
+  "devDependencies": {
+    "@glidejs/glide": "^3.5.2",
+    "@nuxt/image": "^0.6.1",
+    "@nuxtjs/pwa": "^3.3.5",
+    "@nuxtjs/tailwindcss": "5.0.0-4",
+    "@vue/composition-api": "^1.4.6",
+    "@vueuse/core": "^7.6.1",
+    "postcss": "^8.4.6",
+    "tailwindcss": "3.0.10"
+  }
+}
