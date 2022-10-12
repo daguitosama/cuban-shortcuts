@@ -22,7 +22,7 @@
               id="phone-number"
               v-model="number"
               inputmode="numeric"
-              class="ml-2"
+              class="ml-2 bg-white dark:bg-dark-secondSurface"
             />
           </div>
         </div>
