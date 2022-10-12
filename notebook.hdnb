@@ -1,0 +1,57 @@
+```js
+function numberTong(number_str = "asa") {
+    const ng = {
+        prefix: [],
+        first: [],
+        first3: [],
+        next2: [],
+        last2: [],
+    };
+    const digits = number_str.split("");
+
+    for (let i = 0; i < digits.length; i++) {
+        // prefix case
+        if (i < 2) {
+            ng.prefix.push(digits[i]);
+            continue;
+        }
+        // first number
+        //    -
+        // 53 5 244 63 07
+        if (i == 2) {
+            ng.first.push(number_str[i]);
+        }
+        // next 3 numbers
+        //        -
+        // 53 5 244 63 07
+        if (i > 2 && i < 6) {
+            ng.first3.push(number_str[i]);
+        }
+
+        // next 2 numbers
+        //           -
+        // 53 5 244 63 07
+        if (i > 5 && i < 8) {
+            ng.next2.push(number_str[i]);
+        }
+
+        // last 2 numbers
+        //              -
+        // 53 5 244 63 07
+        if (i > 7 && i < 10) {
+            ng.last2.push(number_str[i]);
+        }
+    }
+
+    const formatedNumber = ng.prefix.join('').concat(' ').concat(ng.first.join('')).concat(' ').concat(ng.first3.join('')).concat(' ').concat(ng.next2.join('')).concat(' ').concat(ng.last2.join(''))
+
+    return { ng, number: formatedNumber };
+}
+
+const test = '5352446307';
+
+const g = numberTong(test);
+console.log(g)
+
+
+```
