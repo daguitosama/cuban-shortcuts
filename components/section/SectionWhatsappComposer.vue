@@ -33,7 +33,6 @@
             name=""
             id="message"
             v-model="message"
-            inputmode="numeric"
             class="mt-2 px-2 py-1 w-full rounded-lg bg-white dark:bg-dark-secondSurface font-mono"
           />
         </div>
