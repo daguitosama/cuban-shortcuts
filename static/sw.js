@@ -1,4 +1,4 @@
-const version = 3;
+const version = 4; // whatsapp message composer shortcut
 const cacheName = `shortcuts-${version}`;
 var isOnline = true;
 var urlsToCatch = [

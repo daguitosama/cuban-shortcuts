@@ -48,7 +48,7 @@ export default {
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
     '@nuxtjs/composition-api/module',
-    '@nuxt/image',
+    // '@nuxt/image',
     // '@nuxtjs/pwa',
   ],
 
