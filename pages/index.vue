@@ -4,11 +4,7 @@
     >
         <div class="w-full max-w-md mx-auto pt-20 px-4 pb-32">
             <div>
-                <!-- <SectionLinksPlans
-                    :sectionName="sectionSaldoShortcuts.sectionName"
-                    :planItems="sectionSaldoShortcuts.items"
-                    :itemsType="sectionSaldoShortcuts.itemsType"
-                /> -->
+                <SectionPlans :sectionPlanData="sectionPlanData" />
             </div>
             <div class="mt-16">
                 <!-- <SectionLinksSimple
@@ -39,10 +35,9 @@ import { db, CATEGORIES } from "~/db/shortcutsDb";
 //     itemsType: shortCutsDb.shortcuts.slice(-1)[0].type,
 // };
 
-const sectionSaldoShortcuts = {
-    sectionName: db.CATEGORIES.saldo,
-    items: db.getItemsByCategory(db.CATEGORIES.saldo),
-    itemsType: db.SHORTCUT_TYPES.etecsa,
+const sectionPlanData = {
+    sectionName: db.CATEGORIES.planes,
+    items: db.getItemsByCategory(db.CATEGORIES.planes),
 };
 
 // const bankShortcuts = getItemsByType(types.bankShortcut.type_key);

@@ -3,36 +3,33 @@
         <h1
             class="text-light-text-normal dark:text-dark-text-dimmed capitalize ml-2"
         >
-            {{ sectionName }}
+            {{ sectionPlanData.sectionName }}
         </h1>
         <ul class="mt-2 shadow-md rounded-xl">
-            <li v-for="(item, index) in planItems" :key="index">
+            <li v-for="(item, index) in sectionPlanData.items" :key="index">
                 <SectionLinkPlan
                     :link="item"
                     :isHead="index == 0"
-                    :isMiddle="index != 0 && index < planItems.length - 1"
-                    :isTail="index == planItems.length - 1"
+                    :isMiddle="
+                        index != 0 && index < sectionPlanData.items.length - 1
+                    "
+                    :isTail="index == sectionPlanData.items.length - 1"
                 />
             </li>
         </ul>
     </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 // TODO
 // setup props items types valdiation
 import SectionLinkPlan from "./SectionPlansLink.vue";
-import SectionLinkSimple from "./SectionSimpleLink.vue";
 var props = defineProps({
-    sectionName: String,
-    itemsType: {
-        type: String,
-        default: "",
-    },
-    planItems: {
-        type: Array,
-        default() {
-            return [
+    sectionPlanData: {
+        type: Object,
+        default: () => ({
+            sectionName: "",
+            items: [
                 {
                     type: String, // dbTypes.simple || dbTypes.etecsaPlan
                     group: String, // dbGroups.etecsa || other group
@@ -44,8 +41,8 @@ var props = defineProps({
                         text: String,
                     },
                 },
-            ];
-        },
+            ],
+        }),
     },
 });
 </script>

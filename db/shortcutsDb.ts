@@ -50,7 +50,7 @@ export var shortcutSchemas = {
     },
 };
 
-interface Shortcut {
+export interface Shortcut {
     group: String;
     type: String;
     category: String;
