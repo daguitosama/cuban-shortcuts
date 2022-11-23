@@ -7,11 +7,8 @@
                 <SectionPlans :sectionPlanData="sectionPlanData" />
             </div>
             <div class="mt-16">
-                <!-- <SectionLinksSimple
-                    :sectionName="sectionSimpleShortcuts.sectionName"
-                    :simpleItems="sectionSimpleShortcuts.items"
-                    :itemsType="sectionSimpleShortcuts.itemsType"
-                /> -->
+                <!-- saldo -->
+                <SectionSimple :sectionData="sectionSaldoData" />
             </div>
 
             <div class="mt-16">
@@ -29,15 +26,15 @@
 <script setup>
 import { db, CATEGORIES } from "~/db/shortcutsDb";
 // import ServiceWorkerDriver from "~/components/sw/ServiceWorkerDriver.vue";
-// const sectionPlansShortcuts = {
-//     sectionName: shortCutsDb.categorys.planes,
-//     items: shortCutsDb.shortcuts.slice(-3),
-//     itemsType: shortCutsDb.shortcuts.slice(-1)[0].type,
-// };
 
 const sectionPlanData = {
     sectionName: db.CATEGORIES.planes,
     items: db.getItemsByCategory(db.CATEGORIES.planes),
+};
+
+const sectionSaldoData = {
+    sectionName: db.CATEGORIES.saldo,
+    items: db.getItemsByCategory(db.CATEGORIES.saldo),
 };
 
 // const bankShortcuts = getItemsByType(types.bankShortcut.type_key);

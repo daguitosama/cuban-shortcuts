@@ -21,8 +21,6 @@
 </template>
 
 <script setup lang="ts">
-// TODO
-// setup props items types valdiation
 import SectionLinkPlan from "./SectionPlansLink.vue";
 var props = defineProps({
     sectionPlanData: {

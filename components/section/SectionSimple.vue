@@ -3,40 +3,31 @@
         <h1
             class="text-light-text-normal dark:text-dark-text-dimmed capitalize ml-2"
         >
-            {{ sectionName }}
+            {{ sectionData.sectionName }}
         </h1>
         <ul class="mt-2 shadow-md rounded-xl">
-            <!-- render simple items -->
-            <div v-if="itemsType == SHORTCUT_TYPES.simple">
-                <li v-for="(item, index) in simpleItems" :key="index">
-                    <SectionLinkSimple
-                        :link="item"
-                        :isHead="index == 0"
-                        :isMiddle="index != 0 && index < simpleItems.length - 1"
-                        :isTail="index == simpleItems.length - 1"
-                    />
-                </li>
-            </div>
+            <li v-for="(item, index) in sectionData.items" :key="index">
+                <SectionLinkSimple
+                    :link="item"
+                    :isHead="index == 0"
+                    :isMiddle="
+                        index != 0 && index < sectionData.items.length - 1
+                    "
+                    :isTail="index == sectionData.items.length - 1"
+                />
+            </li>
         </ul>
     </div>
 </template>
 
 <script setup>
-// TODO
-// setup props items types valdiation
-import { SHORTCUT_TYPES } from "~/db/shortcutsDb";
 import SectionLinkSimple from "./SectionSimpleLink.vue";
 var props = defineProps({
-    sectionName: String,
-    itemsType: {
-        type: String,
-        default: "",
-    },
-
-    simpleItems: {
-        type: Array,
-        default() {
-            return [
+    sectionData: {
+        type: Object,
+        default: () => ({
+            sectionName: "",
+            items: [
                 {
                     type: String, // dbTypes.simple || dbTypes.etecsaPlan
                     group: String, // dbGroups.etecsa || other group
@@ -45,8 +36,8 @@ var props = defineProps({
                     command: String,
                     data: null,
                 },
-            ];
-        },
+            ],
+        }),
     },
 });
 </script>
