@@ -3,12 +3,11 @@
         target="_blank"
         rel="noopener"
         :href="`tel:${link.command}`"
-        class="w-full h-full block px-5 py-5 bg-light-elevation dark:bg-[#202124]"
+        class="w-full h-full block px-5 py-5 bg-light-elevation dark:bg-[#202124] dark:text-[#AFBAC6]"
         :class="{
             'rounded-t-xl': isHead,
-            'border-t-light-text-dimmed/40 dark:border-t-dark-text-dimmed/40 border-t':
-                isMiddle,
-            'rounded-b-xl border-t-light-text-dimmed/40 dark:border-t-dark-text-dimmed/40 border-t':
+            'border-t-slate-200 dark:border-t-slate-700/50 border-t': isMiddle,
+            'rounded-b-xl border-t-slate-200 dark:border-t-slate-700/50 border-t':
                 isTail,
         }"
     >

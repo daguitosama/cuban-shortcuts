@@ -6,19 +6,18 @@
         class="w-full h-full block px-5 py-5 bg-light-elevation dark:bg-[#202124]"
         :class="{
             'rounded-t-xl': isHead,
-            'border-t-light-text-dimmed/40 dark:border-t-dark-text-dimmed/40 border-t':
-                isMiddle,
-            'rounded-b-xl border-t-light-text-dimmed/40 dark:border-t-dark-text-dimmed/40 border-t':
+            'border-t-slate-200 dark:border-t-slate-700/50 border-t': isMiddle,
+            'rounded-b-xl border-t-slate-200 dark:border-t-slate-700/50 border-t':
                 isTail,
         }"
     >
         <!-- name -->
-        <p class="text-lg font-medium leading-none">
+        <p class="text-xl font-medium leading-none dark:text-[#AFBAC6]">
             {{ link.name }}
         </p>
         <!-- data -->
         <div
-            class="mt-2 flex items-center justify-start text-xs text-dark-text-dimmed"
+            class="mt-4 flex items-center justify-start text-xs text-dark-text-dimmed"
         >
             <!-- price -->
             <p class="leading-none">$ {{ link.data.price }}</p>

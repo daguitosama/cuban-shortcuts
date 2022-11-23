@@ -8,7 +8,7 @@
         <ul class="mt-2 shadow-md rounded-xl">
             <!-- render simple items -->
             <div
-                class="w-full h-full block px-5 py-5 bg-light-elevation dark:bg-[#202124] rounded-xl"
+                class="w-full h-full block px-5 py-5 bg-light-elevation dark:bg-[#202124] rounded-xl dark:text-[#AFBAC6]"
             >
                 <!-- number -->
                 <div>
@@ -41,7 +41,7 @@
                 <div class="mt-4">
                     <a
                         :href="w_route"
-                        class="border border-slate-600 block w-full bg-gray-800 dark:bg-[#202124] text-white/70 text-center py-2 px-2 rounded-xl"
+                        class="border border-slate-600 block w-full bg-gray-800 dark:bg-slate-600 text-white/70 text-center py-2 px-2 rounded-xl"
                     >
                         Send
                     </a>
@@ -52,7 +52,6 @@
 </template>
 
 <script setup>
-import { computed, ref, watch } from "@vue/composition-api";
 const number = ref("53");
 const message = ref("Hey");
 const w_route = computed(() =>
