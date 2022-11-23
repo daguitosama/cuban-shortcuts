@@ -1,19 +1,19 @@
 {
-    "compilerOptions": {
-        "baseUrl": ".",
-        "paths": {
-          "~/*": [
-            "./*"
-        ],
-        },
-      },
-      "types": [
-        "@nuxt/types",
+  "extends": "./.nuxt/tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "~/*": [
+        "./*"
       ],
-      "exclude": [
-        "node_modules",
-        ".nuxt",
-        "dist",
-        "docs"
-    ]
+    },
+  },
+  "types": [
+    "@nuxt/types",
+  ],
+  // "exclude": [
+  //   "node_modules",
+  //   // ".nuxt",
+  //   "dist",
+  // ]
 }
