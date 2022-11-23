@@ -149,7 +149,7 @@ export var shortcuts = [
         type: SHORTCUT_TYPES.banca,
         group: GROUPS.bank,
         category: CATEGORIES.banca,
-        name: "Recargar cuenta Nauta",
+        name: "Recargar Nauta",
         command: "*444*59#",
         data: null,
     },
