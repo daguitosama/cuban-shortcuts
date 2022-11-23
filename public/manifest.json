@@ -1,13 +1,16 @@
 {
+  "id": "/?source=pwa",
   "name": "Atajos",
   "short_name": "Atajos",
   "description": "The cuban transfermovil shortcuts on the web",
+  "start_url": "/?standalone=true",
+  "display": "fullscreen",
+  "background_color": "#1d2028",
   "icons": [
     {
-      "src": "/img/favicon-32x32.png",
+      "src": "/favicon-32x32.png",
       "sizes": "32x32",
-      "type": "image/png",
-      "purpose": "any maskable"
+      "type": "image/png"
     },
     {
       "src": "/android-chrome-192x192.png",
@@ -19,9 +22,5 @@
       "sizes": "512x512",
       "type": "image/png"
     }
-  ],
-  "start_url": "/?standalone=true",
-  "display": "standalone",
-  "background_color": "#1d2028",
-  "lang": "es"
+  ]
 }

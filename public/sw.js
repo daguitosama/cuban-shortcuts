@@ -1,4 +1,4 @@
-const version = 5.0; // bank shortcuts
+const version = 5.1; // bank shortcuts
 const cacheName = `shortcuts-${version}`;
 var isOnline = true;
 var urlsToCatch = ["/"];

@@ -34,7 +34,7 @@
                         >Dago</a
                     >
                 </p>
-                <p class="mt-2 text-xs text-opacity-80">v 5.0</p>
+                <p class="mt-2 text-xs text-opacity-80">v 5.1</p>
             </div>
         </div>
         <ServiceWorkerDriver />
