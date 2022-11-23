@@ -129,6 +129,38 @@ export var shortcuts = [
         command: "*444*40*03#",
         data: null,
     },
+    {
+        type: SHORTCUT_TYPES.banca,
+        group: GROUPS.bank,
+        category: CATEGORIES.banca,
+        name: "Consultar saldo",
+        command: "*444*46#",
+        data: null,
+    },
+    {
+        type: SHORTCUT_TYPES.banca,
+        group: GROUPS.bank,
+        category: CATEGORIES.banca,
+        name: "Transferir",
+        command: "*444*45#",
+        data: null,
+    },
+    {
+        type: SHORTCUT_TYPES.banca,
+        group: GROUPS.bank,
+        category: CATEGORIES.banca,
+        name: "Recargar cuenta Nauta",
+        command: "*444*59#",
+        data: null,
+    },
+    {
+        type: SHORTCUT_TYPES.banca,
+        group: GROUPS.bank,
+        category: CATEGORIES.banca,
+        name: "Recargar Móvil",
+        command: "*444*54#",
+        data: null,
+    },
 ];
 
 /**
