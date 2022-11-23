@@ -26,13 +26,15 @@
                 <!-- <code>{{ bankShortcuts }}</code> -->
             </div>
         </div>
-        <!-- <ServiceWorkerDriver /> -->
+        <ServiceWorkerDriver />
     </div>
 </template>
 
 <script setup>
 import { db, CATEGORIES } from "~/db/shortcutsDb";
-// import ServiceWorkerDriver from "~/components/sw/ServiceWorkerDriver.vue";
+import SectionLinksPlans from "./components/section/SectionPlans.vue";
+import SectionLinksSimple from "~/components/section/SectionSimple.vue";
+import ServiceWorkerDriver from "~/components/sw/ServiceWorkerDriver.vue";
 // const sectionPlansShortcuts = {
 //     sectionName: shortCutsDb.categorys.planes,
 //     items: shortCutsDb.shortcuts.slice(-3),

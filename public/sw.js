@@ -1,4 +1,4 @@
-const version = 4.1; // whatsapp message composer shortcut fixes
+const version = 5.0; // bank shortcuts
 const cacheName = `shortcuts-${version}`;
 var isOnline = true;
 var urlsToCatch = ["/"];
