@@ -1,7 +1,7 @@
 {
   "name": "Atajos",
   "short_name": "Atajos",
-  "description": "## TODOS",
+  "description": "The cuban transfermovil shortcuts on the web",
   "icons": [
     {
       "src": "/img/favicon-32x32.png",
@@ -22,6 +22,6 @@
   ],
   "start_url": "/?standalone=true",
   "display": "standalone",
-  "background_color": "#24292f",
+  "background_color": "#1d2028",
   "lang": "es"
 }

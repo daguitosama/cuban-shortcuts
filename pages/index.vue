@@ -3,20 +3,24 @@
         class="w-full min-h-screen text-dark-surface bg-white dark:bg-dark-surface dark:text-dark-text-normal transition-all duration-300 ease-in"
     >
         <div class="w-full max-w-md mx-auto pt-20 px-4 pb-32">
+            <!-- shortcut sections -->
+            <!-- planes -->
             <div>
                 <SectionPlans :sectionPlanData="sectionPlanData" />
             </div>
+            <!-- saldo -->
             <div class="mt-16">
-                <!-- saldo -->
                 <SectionSimple :sectionData="sectionSaldoData" />
             </div>
 
+            <!-- banca -->
             <div class="mt-16">
-                <SectionWhatsappComposer />
+                <SectionSimple :sectionData="sectionBankData" />
             </div>
 
+            <!-- whatsapp composer -->
             <div class="mt-16">
-                <!-- <code>{{ bankShortcuts }}</code> -->
+                <SectionWhatsappComposer />
             </div>
         </div>
         <!-- <ServiceWorkerDriver /> -->
@@ -24,7 +28,7 @@
 </template>
 
 <script setup>
-import { db, CATEGORIES } from "~/db/shortcutsDb";
+import { db } from "~/db/shortcutsDb";
 // import ServiceWorkerDriver from "~/components/sw/ServiceWorkerDriver.vue";
 
 const sectionPlanData = {
@@ -37,5 +41,8 @@ const sectionSaldoData = {
     items: db.getItemsByCategory(db.CATEGORIES.saldo),
 };
 
-// const bankShortcuts = getItemsByType(types.bankShortcut.type_key);
+const sectionBankData = {
+    sectionName: db.CATEGORIES.banca,
+    items: db.getItemsByCategory(db.CATEGORIES.banca),
+};
 </script>
