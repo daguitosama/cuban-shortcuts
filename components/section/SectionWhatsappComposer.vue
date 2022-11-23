@@ -5,7 +5,7 @@
         >
             Whatsapp Composer
         </h1>
-        <ul class="mt-2 shadow-md rounded-xl">
+        <ul class="mt-2 shadow-md rounded-2xl">
             <!-- render simple items -->
             <div
                 class="w-full h-full block px-5 py-5 bg-light-elevation dark:bg-[#202124] rounded-xl dark:text-[#AFBAC6]"

@@ -5,9 +5,9 @@
         :href="`tel:${link.command}`"
         class="w-full h-full block px-5 py-5 bg-light-elevation dark:bg-[#202124]"
         :class="{
-            'rounded-t-xl': isHead,
+            'rounded-t-2xl': isHead,
             'border-t-slate-200 dark:border-t-slate-700/50 border-t': isMiddle,
-            'rounded-b-xl border-t-slate-200 dark:border-t-slate-700/50 border-t':
+            'rounded-b-2xl border-t-slate-200 dark:border-t-slate-700/50 border-t':
                 isTail,
         }"
     >
