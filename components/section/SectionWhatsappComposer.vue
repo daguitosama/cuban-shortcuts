@@ -41,7 +41,7 @@
                 <div class="mt-4">
                     <a
                         :href="w_route"
-                        class="border border-slate-600 block w-full bg-gray-800 dark:bg-slate-600 text-white/70 text-center py-2 px-2 rounded-xl"
+                        class="border border-slate-600 block w-full bg-gray-800 dark:bg-slate-600 text-white/90 dark:text-white/80 text-center py-2 px-2 rounded-xl"
                     >
                         Send
                     </a>
