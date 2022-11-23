@@ -37,13 +37,13 @@
                 <p class="mt-2 text-xs text-opacity-80">v 5.0</p>
             </div>
         </div>
-        <!-- <ServiceWorkerDriver /> -->
+        <ServiceWorkerDriver />
     </div>
 </template>
 
 <script setup>
 import { db } from "~/db/shortcutsDb";
-// import ServiceWorkerDriver from "~/components/sw/ServiceWorkerDriver.vue";
+import ServiceWorkerDriver from "~/components/sw/ServiceWorkerDriver.vue";
 
 const sectionPlanData = {
     sectionName: db.CATEGORIES.planes,
