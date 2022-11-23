@@ -8,13 +8,13 @@
         <ul class="mt-2 shadow-md rounded-xl">
             <!-- render simple items -->
             <div
-                class="w-full h-full block px-5 py-5 bg-light-elevation dark:bg-dark-elevation rounded-xl"
+                class="w-full h-full block px-5 py-5 bg-light-elevation dark:bg-[#202124] rounded-xl"
             >
                 <!-- number -->
                 <div>
                     <label for="phone-number"> Full Phone Number </label>
                     <div
-                        class="mt-2 px-2 py-1 w-full rounded-lg relative flex items-baseline bg-white dark:bg-dark-secondSurface font-mono"
+                        class="border border-slate-600 mt-2 px-2 py-1 w-full rounded-lg relative flex items-baseline bg-white dark:bg-[#202124] font-mono"
                     >
                         <span>+</span>
                         <input
@@ -23,7 +23,7 @@
                             id="phone-number"
                             v-model="number"
                             inputmode="numeric"
-                            class="ml-2 bg-white dark:bg-dark-secondSurface w-full"
+                            class="ml-2 bg-white dark:bg-[#202124] w-full"
                         />
                     </div>
                 </div>
@@ -35,13 +35,13 @@
                         name=""
                         id="message"
                         v-model="message"
-                        class="mt-2 px-2 py-1 w-full rounded-lg bg-white dark:bg-dark-secondSurface font-mono"
+                        class="border border-slate-600 mt-2 px-2 py-1 w-full rounded-lg bg-white dark:bg-[#202124] font-mono"
                     />
                 </div>
                 <div class="mt-4">
                     <a
                         :href="w_route"
-                        class="block w-full bg-gray-800 text-white text-center py-2 px-2 rounded-xl"
+                        class="border border-slate-600 block w-full bg-gray-800 dark:bg-[#202124] text-white/70 text-center py-2 px-2 rounded-xl"
                     >
                         Send
                     </a>

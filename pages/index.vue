@@ -1,6 +1,6 @@
 <template>
     <div
-        class="w-full min-h-screen text-dark-surface bg-white dark:bg-dark-surface dark:text-dark-text-normal transition-all duration-300 ease-in"
+        class="w-full min-h-screen text-dark-surface bg-white dark:bg-black dark:text-dark-text-normal transition-all duration-300 ease-in"
     >
         <div class="w-full max-w-md mx-auto pt-20 px-4 pb-32">
             <!-- shortcut sections -->
@@ -41,8 +41,8 @@ const sectionSaldoData = {
     items: db.getItemsByCategory(db.CATEGORIES.saldo),
 };
 
-const sectionBankData = {
+const sectionBankData = ref({
     sectionName: db.CATEGORIES.banca,
     items: db.getItemsByCategory(db.CATEGORIES.banca),
-};
+});
 </script>

@@ -24,9 +24,9 @@ module.exports = {
                 dark: {
                     "text-normal": "#aeb8c7",
                     "text-dimmed": "#768390",
-                    surface: "#1d2028",
-                    secondSurface: "#23262e",
-                    elevation: "#383c47",
+                    surface: "#242324",
+                    secondSurface: colors.gray[700],
+                    elevation: "#2E2D2E",
                 },
             },
         },

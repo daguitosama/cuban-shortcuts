@@ -7,7 +7,7 @@
         </h1>
         <ul class="mt-2 shadow-md rounded-xl">
             <li v-for="(item, index) in sectionData.items" :key="index">
-                <SectionLinkSimple
+                <SectionSimpleLink
                     :link="item"
                     :isHead="index == 0"
                     :isMiddle="
@@ -21,7 +21,6 @@
 </template>
 
 <script setup>
-import SectionLinkSimple from "./SectionSimpleLink.vue";
 var props = defineProps({
     sectionData: {
         type: Object,
