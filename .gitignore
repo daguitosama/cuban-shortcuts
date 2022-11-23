@@ -86,3 +86,6 @@ dist
 
 # Vim swap files
 *.swp
+
+# nuxt 3 output
+.output/

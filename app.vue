@@ -60,3 +60,9 @@ const sectionBankData = {
     items: db.getItemsByCategory(db.CATEGORIES.banca),
 };
 </script>
+
+<style>
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+</style>
