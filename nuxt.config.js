@@ -1,6 +1,6 @@
-export default {
+export default defineNuxtConfig({
     // Target: https://go.nuxtjs.dev/config-target
-    target: "static",
+    // target: "static",
 
     // router: {
     //   base: '/'
@@ -20,6 +20,10 @@ export default {
             },
             { hid: "description", name: "description", content: "" },
             { name: "format-detection", content: "telephone=no" },
+            {
+                name: "description",
+                content: "The cuban transfermovil shortcuts on the web",
+            },
         ],
         link: [
             { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
@@ -39,4 +43,4 @@ export default {
 
     // Modules: https://go.nuxtjs.dev/config-modules
     modules: ["@nuxtjs/tailwindcss"],
-};
+});
